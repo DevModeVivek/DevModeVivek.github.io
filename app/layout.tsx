@@ -6,10 +6,10 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Vivek Kumar - Software Developer",
+  title: "Vivek Kumar — Software Engineer | Full-Stack & Systems",
   description:
-    "Software Developer specializing in React.js, Next.js, and modern web technologies. Building scalable and user-friendly applications.",
-  keywords: "Software Developer, React.js, Next.js, TypeScript, JavaScript, Web Development",
+    "Vivek Kumar is a software engineer building reliable full-stack SaaS products, RESTful systems, and practical operational workflows.",
+  keywords: "Software Engineer, Full-Stack Developer, Systems, React.js, Node.js, Docker, REST APIs, Algoma University",
   authors: [{ name: "Vivek Kumar" }],
   creator: "Vivek Kumar",
   openGraph: {
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth bg-background">
       <body className={inter.className}>{children}</body>
     </html>
   )
