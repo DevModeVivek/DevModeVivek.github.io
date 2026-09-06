@@ -7,39 +7,5 @@ import { motion } from "framer-motion"
 export function Hero() {
   const scrollTo = (id: string) => document.querySelector(id)?.scrollIntoView({ behavior: "smooth" })
 
-  return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/40" />
-      <div className="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.04)_1px,transparent_1px)] [background-size:48px_48px]" />
-      <div className="container-custom relative z-10">
-        <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.15fr_.85fr] gap-12 items-center">
-          <div>
-            <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5 }} className="flex items-center gap-3 text-accent font-mono text-sm mb-6">
-              <Terminal className="h-4 w-4" />
-              <span>software-engineer@algoma:~$ build --reliable</span>
-            </motion.div>
-            <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .1 }} className="heading-1 text-foreground mb-6 text-balance">
-              Hi, I&apos;m <span className="gradient-text">Vivek Kumar</span>
-            </motion.h1>
-            <motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .2 }} className="text-xl md:text-2xl text-foreground mb-5 font-medium">
-              Software Engineer <span className="text-accent">•</span> Full-Stack &amp; Systems
-            </motion.p>
-            <motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .3 }} className="text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-              I build production software, integrate dependable data systems, and troubleshoot the operational details that keep digital experiences moving.
-            </motion.p>
-            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .4 }} className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={() => scrollTo("#projects")} className="btn-primary group">View Projects <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></Button>
-              <Button asChild variant="outline" className="btn-secondary group bg-transparent"><a href="https://drive.google.com/file/d/17P_Lu0_32i_ul9-Huu7VKVVseyc1cd8C/view?usp=sharing" target="_blank" rel="noopener noreferrer"><Download className="mr-2 h-4 w-4" />Download Resume</a></Button>
-            </motion.div>
-          </div>
-          <motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .7, delay: .25 }} className="hidden lg:block">
-            <div className="border border-border bg-card/70 backdrop-blur-sm p-6 shadow-2xl">
-              <div className="flex items-center justify-between border-b border-border pb-4 mb-5 font-mono text-xs text-muted-foreground"><span>system_profile.json</span><span className="text-accent">● online</span></div>
-              <pre className="font-mono text-sm leading-7 text-muted-foreground whitespace-pre-wrap">{`{\n  "focus": [\n    "full-stack SaaS",\n    "RESTful systems",\n    "deployment operations"\n  ],\n  "toolkit": "React + Node + Docker",\n  "location": "Ontario, Canada"\n}`}</pre>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  )
+  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden"><div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/40" /><div className="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.04)_1px,transparent_1px)] [background-size:48px_48px]" /><div className="container-custom relative z-10"><div className="max-w-5xl mx-auto grid lg:grid-cols-[1.15fr_.85fr] gap-12 items-center"><div><motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5 }} className="flex items-center gap-3 text-accent font-mono text-sm mb-6"><Terminal className="h-4 w-4" /><span>ai-engineer@algoma:~$ build --intelligent</span></motion.div><motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .1 }} className="heading-1 text-foreground mb-6 text-balance">Hi, I&apos;m <span className="gradient-text">Vivek Kumar</span></motion.h1><motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .2 }} className="text-xl md:text-2xl text-foreground mb-5 font-medium">AI-Influenced Engineer <span className="text-accent">•</span> Full-Stack &amp; Agentic Systems</motion.p><motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .3 }} className="text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed">I build intelligent products and dependable systems by combining applied AI, agentic workflows, full-stack engineering, and practical operational thinking.</motion.p><motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .4 }} className="flex flex-col sm:flex-row gap-4"><Button onClick={() => scrollTo("#projects")} className="btn-primary group">View Projects <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" /></Button><Button asChild variant="outline" className="btn-secondary group bg-transparent"><a href="https://drive.google.com/file/d/1fseDsCoHNb83x0iiUu2OpFZfouRVG19a/view?usp=sharing" target="_blank" rel="noopener noreferrer"><Download className="mr-2 h-4 w-4" />View Resume</a></Button></motion.div></div><motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .7, delay: .25 }} className="hidden lg:block"><div className="border border-border bg-card/70 backdrop-blur-sm p-6 shadow-2xl"><div className="flex items-center justify-between border-b border-border pb-4 mb-5 font-mono text-xs text-muted-foreground"><span>system_profile.json</span><span className="text-accent">● online</span></div><pre className="font-mono text-sm leading-7 text-muted-foreground whitespace-pre-wrap">{`{\n  "focus": [\n    "applied AI",\n    "agentic workflows",\n    "full-stack systems"\n  ],\n  "toolkit": "Claude + React + Node",\n  "location": "Brampton, Ontario"\n}`}</pre></div></motion.div></div></div></section>
 }
