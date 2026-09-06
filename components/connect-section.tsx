@@ -43,7 +43,7 @@ export function ConnectSection() {
                   <div className="flex items-center space-x-3 p-3 bg-black/40 rounded-xl hover:bg-black/60 transition-all duration-200 border border-white/10">
                     <span className="text-2xl">📄</span>
                     <a
-                      href="https://drive.google.com/file/d/17P_Lu0_32i_ul9-Huu7VKVVseyc1cd8C/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1fseDsCoHNb83x0iiUu2OpFZfouRVG19a/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-purple-400 hover:text-purple-300 font-medium transition-colors"
