@@ -1,18 +1,11 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Download, Terminal } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function Hero() {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => setMounted(true), [])
-
   const scrollTo = (id: string) => document.querySelector(id)?.scrollIntoView({ behavior: "smooth" })
-
-  if (!mounted) return null
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
