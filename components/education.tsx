@@ -7,7 +7,7 @@ import { GraduationCap, Calendar, MapPin, Award } from "lucide-react"
 
 const educationData = [
   { id: 1, degree: "Bachelor of Science in Computer Science Honours (Co-op)", institution: "Algoma University", location: "Toronto, Ontario, Canada", period: "May 2025 – August 2028", status: "Currently Enrolled", grade: "A+", activities: ["AU Connect Peer Mentorship", "Student Life Ambassador"] },
-  { id: 2, degree: "Diploma in Python Programming", institution: "NED University of Engineering & Technology", location: "Karachi, Pakistan", period: "January 2023 – April 2023", status: "Completed", grade: "Grade: A+", activities: ["Python Programming", "Data Structures & Algorithms", "API Development", "Database Connectivity"] },
+  { id: 2, degree: "Diploma, Computer Software Engineering", institution: "NED University of Engineering & Technology", location: "Karachi, Pakistan", period: "January 2023 – April 2023", status: "Completed", grade: "Grade: A+", activities: ["Python Programming", "Data Structures & Algorithms", "API Development", "Database Connectivity"] },
 ]
 
 export function Education() {

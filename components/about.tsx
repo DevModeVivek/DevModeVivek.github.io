@@ -2,13 +2,12 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { Code, Users, Server, Wrench } from "lucide-react"
+import { Users, Server, Wrench } from "lucide-react"
 
 const features = [
-  { icon: Code, title: "Applied AI, Practically", description: "I use AI tools deliberately in how I build — from AI-assisted development workflows to AI-powered features like CyberSecure AI's log analysis — not as a buzzword, as part of the toolkit." },
-  { icon: Server, title: "Systems Thinking", description: "Connecting interfaces to REST services, databases, queues, and caching — thinking about deployment and reliability, not just the UI layer." },
-  { icon: Wrench, title: "Practical Troubleshooting", description: "Comfortable tracing an issue from a broken UI, through an API response, to the backend log that explains it." },
-  { icon: Users, title: "People-Centered", description: "Mentoring students, coordinating across departments, and making complex processes approachable." },
+  { icon: Server, title: "Systems & Automation", description: "Connecting interfaces to REST services, relational databases, and automated workflows using Python and Power Platform." },
+  { icon: Wrench, title: "Data-Driven Troubleshooting", description: "Comfortable tracing an issue from a broken UI, through an API response, straight down to the SQL database or backend log." },
+  { icon: Users, title: "People-Centered", description: "Mentoring students, gathering business requirements, and making complex technical processes approachable for non-technical users." },
 ]
 
 export function About() {
@@ -17,8 +16,8 @@ export function About() {
       <div className="container-custom">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .6 }} viewport={{ once: true }} className="max-w-4xl mb-14">
           <p className="eyebrow">01 / PROFILE</p>
-          <h2 className="heading-2 text-foreground mb-6">Engineering with a systems view.</h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">I'm a Computer Science (Honours) student who builds software and pays attention to how it behaves once it ships. My work spans production SaaS features built with React and Next.js, backend systems and REST APIs in my own projects using Node.js, Python, and Java, and campus leadership work that keeps me close to how people actually get stuck using systems. Based in Toronto, Ontario — currently looking toward Winter 2027 co-op roles across software engineering and IT systems/operations.</p>
+          <h2 className="heading-2 text-foreground mb-6">Engineering with a systems and operations view.</h2>
+          <p className="text-muted-foreground text-lg leading-relaxed">I'm a Computer Science (Honours) student who builds software and pays close attention to how it impacts business operations once it ships. My work spans building full-stack applications with React and Node, designing automated workflows with Power Automate and Python, and managing databases with SQL. Because of my campus leadership background, I stay close to how people actually use systems, ensuring the technology I build solves real human problems. Based in Toronto, Ontario — currently looking for Winter 2027 co-op roles across software engineering, systems operations, and business automation.</p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">{features.map((feature, index) => <motion.div key={feature.title} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: index * .08 }} viewport={{ once: true }}><Card className="project-card h-full"><CardContent className="p-6"><feature.icon className="h-6 w-6 text-accent mb-8" /><h3 className="text-lg font-semibold text-foreground mb-3">{feature.title}</h3><p className="text-muted-foreground leading-relaxed text-sm">{feature.description}</p></CardContent></Card></motion.div>)}</div>
       </div>
