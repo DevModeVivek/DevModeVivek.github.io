@@ -6,24 +6,24 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Vivek Kumar — AI-Influenced Engineer | Agentic Systems",
+  title: "Vivek Kumar — Software & Systems Developer",
   description:
-    "Vivek Kumar is an AI-influenced engineer building intelligent products, agentic workflows, full-stack SaaS, and dependable systems.",
-  keywords: "AI Engineer, Agentic AI, Claude, Full-Stack Developer, React.js, Node.js, Docker, Algoma University",
+    "Vivek Kumar is a software and systems developer building business automation, backend platforms, and dependable multi-tenant SaaS.",
+  keywords: "Software Developer, Systems Developer, Business Automation, Backend Architecture, Multi-Tenant SaaS, React.js, Node.js, Docker, Algoma University",
   authors: [{ name: "Vivek Kumar" }],
   creator: "Vivek Kumar",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://vivek-portfolio.vercel.app",
-    title: "Vivek Kumar - AI-Influenced Engineer",
-    description: "AI-influenced engineer building intelligent products, agentic workflows, and dependable full-stack systems.",
+    title: "Vivek Kumar - Software & Systems Developer",
+    description: "Software and systems developer building business automation, backend platforms, and dependable multi-tenant SaaS.",
     siteName: "Vivek Kumar Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vivek Kumar - AI-Influenced Engineer",
-    description: "AI-influenced engineer building intelligent products, agentic workflows, and dependable full-stack systems.",
+    title: "Vivek Kumar - Software & Systems Developer",
+    description: "Software and systems developer building business automation, backend platforms, and dependable multi-tenant SaaS.",
   },
   icons: {
     icon: "/images/vivek-avatar.png",
